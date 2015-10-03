@@ -34,6 +34,10 @@ CPM_AddModule("cpm-glew"
 	GIT_REPOSITORY "https://github.com/iauns/cpm-glew.git"
 	GIT_TAG "1.0.1")
 
+CPM_AddModule("cpm-lodepng"
+	GIT_REPOSITORY "https://github.com/nsg/cpm-lodepng.git"
+	GIT_TAG "9879d938ce3f110ccca020979d282ea2e4713398")
+
 CPM_Finish()
 
 #-----------------------------------------------------------------------
