@@ -3,7 +3,6 @@
 #include <GLFW/glfw3.h>
 #include <tinycthread/source/tinycthread.h>
 #include "gui.h"
-#include "old_main.h"
 
 using namespace Konstructs;
 

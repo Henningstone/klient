@@ -65,5 +65,6 @@ CPM_Finish()
 
 set(CMAKE_BUILD_TYPE Debug)
 
-add_executable(konstructs src/main.cpp)
+FILE(GLOB SOURCE_FILES src/*.cpp)
+add_executable(konstructs ${SOURCE_FILES})
 target_link_libraries(konstructs ${CPM_LIBRARIES})
