@@ -38,6 +38,10 @@ CPM_AddModule("cpm-lodepng"
 	GIT_REPOSITORY "https://github.com/nsg/cpm-lodepng.git"
 	GIT_TAG "9879d938ce3f110ccca020979d282ea2e4713398")
 
+CPM_AddModule("cpm-tinycthread"
+	GIT_REPOSITORY "https://github.com/nsg/cpm-tinycthread.git"
+	GIT_TAG "19893fa1dd981fc222197d8b19f26d468f9232d8")
+
 CPM_Finish()
 
 #-----------------------------------------------------------------------
