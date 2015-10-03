@@ -65,6 +65,9 @@ CPM_Finish()
 
 set(CMAKE_BUILD_TYPE Debug)
 
+find_package(ZLIB REQUIRED)
+include_directories(${ZLIB_INCLUDE_DIRS})
+
 FILE(GLOB SOURCE_FILES src/*.cpp)
 add_executable(konstructs ${SOURCE_FILES})
 target_link_libraries(konstructs ${CPM_LIBRARIES})
