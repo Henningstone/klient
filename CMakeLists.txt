@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8 FATAL_ERROR)
-project(klient)
+project(konstructs)
 
 #-----------------------------------------------------------------------
 # Check for C++11 enabled compiler
@@ -65,5 +65,5 @@ CPM_Finish()
 
 set(CMAKE_BUILD_TYPE Debug)
 
-add_executable(klient src/main.cpp)
-target_link_libraries(klient ${CPM_LIBRARIES})
+add_executable(konstructs src/main.cpp)
+target_link_libraries(konstructs ${CPM_LIBRARIES})
