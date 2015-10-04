@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
-#include <tinycthread/source/tinycthread.h>
+#include <tinycthread/tinycthread.h>
 #include "gui.h"
 
 using namespace Konstructs;

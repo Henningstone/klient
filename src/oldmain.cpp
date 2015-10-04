@@ -20,7 +20,7 @@
 #include "item.h"
 #include "matrix.h"
 #include "noise/noise.h"
-#include "tinycthread/source/tinycthread.h"
+#include "tinycthread/tinycthread.h"
 #include "util.h"
 #include "inventory.h"
 #include "compress.h"

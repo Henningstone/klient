@@ -14,7 +14,7 @@
 #include <errno.h>
 #include "client.h"
 #include "konstructs.h"
-#include "tinycthread/source/tinycthread.h"
+#include "tinycthread/tinycthread.h"
 
 #define MAX_RECV_SIZE 4096*1024
 #define PACKETS (MAX_PENDING_CHUNKS * 2)
