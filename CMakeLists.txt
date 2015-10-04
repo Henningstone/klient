@@ -53,10 +53,6 @@ CPM_AddModule("cpm-lodepng"
 	GIT_REPOSITORY "https://github.com/nsg/cpm-lodepng.git"
 	GIT_TAG "9879d938ce3f110ccca020979d282ea2e4713398")
 
-CPM_AddModule("cpm-tinycthread"
-	GIT_REPOSITORY "https://github.com/nsg/cpm-tinycthread.git"
-	GIT_TAG "2c8add84633d3424811ed1c1e5df8c0bb81af04c")
-
 CPM_Finish()
 
 #-----------------------------------------------------------------------
@@ -68,6 +64,6 @@ set(CMAKE_BUILD_TYPE Debug)
 find_package(ZLIB REQUIRED)
 include_directories(${ZLIB_INCLUDE_DIRS})
 
-FILE(GLOB SOURCE_FILES src/*.cpp)
+FILE(GLOB SOURCE_FILES src/*.cpp src/noise/*.cpp src/tinycthread/*.cpp)
 add_executable(konstructs ${SOURCE_FILES})
-target_link_libraries(konstructs ${CPM_LIBRARIES})
+target_link_libraries(konstructs ${CPM_LIBRARIES} ${ZLIB_LIBRARIES})
