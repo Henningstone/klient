@@ -37,6 +37,12 @@ endif()
 endif()
 include(${CPM_DIR}/CPM.cmake)
 
+# Don't build CAF libraries that are not used
+set(CAF_NO_CASH yes)
+set(CAF_NO_NEXUS yes)
+set(CAF_NO_OPENCL yes)
+set(CAF_NO_RIAC yes)
+
 #------------------------------------------------------------------------------
 # CPM Modules
 #------------------------------------------------------------------------------
@@ -52,6 +58,10 @@ CPM_AddModule("cpm-glew"
 CPM_AddModule("cpm-lodepng"
 	GIT_REPOSITORY "https://github.com/nsg/cpm-lodepng.git"
 	GIT_TAG "9879d938ce3f110ccca020979d282ea2e4713398")
+
+CPM_AddModule("cpm-actor-framework"
+	GIT_REPOSITORY "https://github.com/petterarvidsson/cpm-actor-framework.git"
+	GIT_TAG "0.14.2")
 
 CPM_Finish()
 
