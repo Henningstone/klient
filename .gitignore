@@ -13,9 +13,6 @@
 *.dylib
 *.dll
 
-# Fortran module files
-*.mod
-
 # Compiled Static libraries
 *.lai
 *.la
@@ -23,6 +20,14 @@
 *.lib
 
 # Executables
-*.exe
-*.out
-*.app
+klient
+
+# CMake
+CMakeCache.txt
+CMakeFiles
+cmake_install.cmake
+Makefile
+
+# CPM
+cpm-bin
+cpm_packages
